@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+
+.foo {
+    white-space: pre-wrap;
+  }
+
+  .selected {
+    border-bottom: 2px solid #3A3B3B;
+    font-weight: bold;
+    font-size: 16px; 
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .bg-image {
+    background-image: url('../../client/src/assets/img1.jpeg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Add this class to your main element */
+  .main-background {
+    @apply bg-image;
+  }
+
+  
